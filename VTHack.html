@@ -13,6 +13,7 @@ tw-icon {
 }
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">//requires jquery
 
 var myAudio = new Audio('https://raw.githubusercontent.com/TeamImpatientBanana/Stories/master/Music/this.mp3'); 
@@ -20,7 +21,8 @@ myAudio.addEventListener('ended', function() {
     this.currentTime = 0;
     this.play();
 }, false);
-myAudio.play();</script><tw-passagedata pid="1" name="Help Me" tags="" position="200,350">&lt;b&gt;You open your eyes from what seems to have been from a sleep. There is an elderly man and other objects in front of you. What will you do?&lt;/font&gt;&lt;/b&gt;
+myAudio.play();
+</script><tw-passagedata pid="1" name="Help Me" tags="" position="200,350">&lt;b&gt;You open your eyes from what seems to have been from a sleep. There is an elderly man and other objects in front of you. What will you do?&lt;/font&gt;&lt;/b&gt;
 
 [[Inspect the body-&gt;Room 1 Body]]
 
@@ -54,7 +56,7 @@ $(&quot;body&quot;).css(&quot;background-image&quot;, &quot;url(https://raw.gith
 &lt;script&gt;
 $(&quot;body&quot;).css(&quot;background-image&quot;, &quot;url(https://raw.githubusercontent.com/TeamImpatientBanana/Stories/master/Pictures/Room3.png)&quot;);
 &lt;/script&gt;</tw-passagedata>
-<tw-passagedata pid="4" name="Room 1 Body" tags="" position="500,0">&lt;b&gt;You nervously walk closer to the man. He slowly shows you a smile. He has a piece of paper in his hand, trying to hold it out for you.&lt;/b&gt;
+<tw-passagedata pid="4" name="Room 1 Body" tags="" position="499,0">&lt;b&gt;You nervously walk closer to the man. He slowly shows you a smile. He has a piece of paper in his hand, trying to hold it out for you.&lt;/b&gt;
 
 [[Take the paper and read it-&gt;Journal Entry #1]]
 &lt;script&gt;
@@ -144,7 +146,10 @@ $(&quot;body&quot;).css(&quot;background-image&quot;, &quot;url(https://raw.gith
 
 &lt;b&gt;This voice...You&#39;ve never heard it before. They don&#39;t sound so well. Your instincts tell you not to respond, what will you do?  &lt;/b&gt;
 
-[[Get Up And Respond-&gt;Help Me]]</tw-passagedata>
+[[Get Up And Respond-&gt;Help Me]]
+&lt;script&gt;
+$(&quot;body&quot;).css(&quot;background-image&quot;, &quot;none&quot;);
+&lt;/script&gt;</tw-passagedata>
 <tw-passagedata pid="18" name="Journal Entry #2" tags="" position="1200,800">&lt;font color=white&gt;&lt;i&gt;This name sounds familiar. I just don&#39;t know why..&lt;/i&gt;
 &lt;script&gt;
 $(&quot;body&quot;).css(&quot;background-image&quot;, &quot;url(https://raw.githubusercontent.com/TeamImpatientBanana/Stories/master/Pictures/Page2.png)&quot;);
