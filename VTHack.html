@@ -12,10 +12,15 @@ tw-icon {
 	opacity: 0.3;
 }
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">//requires jquery
 
-
-</script><tw-passagedata pid="1" name="Help Me" tags="" position="200,350">&lt;b&gt;You open your eyes from what seems to have been from a sleep. There is an elderly man and other objects in front of you. What will you do?&lt;/font&gt;&lt;/b&gt;
+var myAudio = new Audio('https://raw.githubusercontent.com/TeamImpatientBanana/Stories/master/Music/this.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();</script><tw-passagedata pid="1" name="Help Me" tags="" position="200,350">&lt;b&gt;You open your eyes from what seems to have been from a sleep. There is an elderly man and other objects in front of you. What will you do?&lt;/font&gt;&lt;/b&gt;
 
 [[Inspect the body-&gt;Room 1 Body]]
 
